@@ -1,0 +1,62 @@
+# Keep the parent checkout as a thin wrapper around the public repo.
+*
+
+!.gitignore
+!README.md
+!hishells-pv-research/
+!hishells-pv-research/**
+
+# Local-only files that should not be pushed.
+.DS_Store
+**/.DS_Store
+WORKSPACE_MAP.md
+pv_shells/
+presentation_visuals/
+
+# Generated data and model artifacts.
+**/data/raw/
+**/training_data/*/
+!**/training_data/configs/
+!**/training_data/manifest.json
+!**/training_data/.gitkeep
+**/runs/
+**/checkpoints/
+**/review_panels/
+**/candidate_components/
+**/scratch/
+**/tmp/
+
+# Large astronomy/model formats.
+*.fits
+*.FITS
+*.fit
+*.FIT
+*.fts
+*.FTS
+*.npy
+*.npz
+*.keras
+*.h5
+*.hdf5
+*.pt
+*.pth
+events.out.tfevents*
+
+# Local transcript/scratch files.
+hishells-pv-research/docs/transcripts/
+
+# Python/build noise.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/

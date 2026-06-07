@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Build and test artifacts
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Raw astronomy data
+data/raw/
+*.fits
+*.FITS
+*.fit
+*.FIT
+*.fts
+*.FTS
+
+# Generated PV data and labels
+training_data/*/
+!training_data/configs/
+!training_data/manifest.json
+!training_data/.gitkeep
+*.npy
+*.npz
+
+# Model artifacts and training logs
+runs/
+checkpoints/
+*.keras
+*.h5
+*.hdf5
+*.pt
+*.pth
+events.out.tfevents*
+
+# Local review/scratch outputs
+review_panels/
+candidate_components/
+scratch/
+tmp/
+
+# Local transcript/scratch files
+docs/transcripts/

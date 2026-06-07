@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+blocked='(\.fits$|\.FITS$|\.fit$|\.FIT$|\.fts$|\.FTS$|\.npy$|\.npz$|\.keras$|\.h5$|\.hdf5$|\.pt$|\.pth$|events\.out\.tfevents)'
+
+matches="$(git diff --cached --name-only | grep -E "$blocked" || true)"
+if [[ -n "$matches" ]]; then
+  echo "Blocked large/generated files from commit:"
+  echo "$matches"
+  echo
+  echo "Move raw FITS files to data/raw/ and keep generated arrays/models out of Git."
+  exit 1
+fi
