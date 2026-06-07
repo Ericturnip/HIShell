@@ -1,0 +1,26 @@
+{
+  "reference_shells": 1046,
+  "generated_shells_in_requested_splits": 507,
+  "detected_known_shells_after_filters": 507,
+  "blind_review_candidates_written": 1000,
+  "type_detection_counts": {
+    "1": {
+      "total_generated_shells": 253,
+      "detected_after_filters": 253
+    },
+    "2": {
+      "total_generated_shells": 147,
+      "detected_after_filters": 147
+    },
+    "3": {
+      "total_generated_shells": 107,
+      "detected_after_filters": 107
+    }
+  },
+  "outputs": {
+    "reference_catalog": "/Users/turnip/Desktop/HIShells copy/pv_shells/runs/pv_unet_clean_physical_baseline_20260522_022751/review_catalogs/bagetakos_reference_shell_catalog.csv",
+    "finished_known_shell_catalog": "/Users/turnip/Desktop/HIShells copy/pv_shells/runs/pv_unet_clean_physical_baseline_20260522_022751/review_catalogs/finished_known_shell_catalog_threshold_0p075.csv",
+    "blind_review_candidates": "/Users/turnip/Desktop/HIShells copy/pv_shells/runs/pv_unet_clean_physical_baseline_20260522_022751/review_catalogs/blind_review_candidates_threshold_0p075.csv",
+    "figure2_examples": "/Users/turnip/Desktop/HIShells copy/pv_shells/runs/pv_unet_clean_physical_baseline_20260522_022751/review_catalogs/figure2_type_examples.csv"
+  }
+}

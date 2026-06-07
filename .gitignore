@@ -10,8 +10,8 @@
 .DS_Store
 **/.DS_Store
 WORKSPACE_MAP.md
-pv_shells/
-presentation_visuals/
+pv_shells/*
+presentation_visuals/*
 
 # Generated data and model artifacts.
 **/data/raw/
@@ -60,3 +60,10 @@ dist/
 .ruff_cache/
 .coverage
 htmlcov/
+
+# Grading artifacts kept in Git.
+!pv_shells/
+!pv_shells/runs/
+!pv_shells/runs/**
+!presentation_visuals/
+!presentation_visuals/**
