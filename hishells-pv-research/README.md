@@ -103,6 +103,8 @@ data/raw/NGC_3031_NA_CUBE_THINGS.FITS
 
 Generated datasets are written under `training_data/`. Training and evaluation outputs are written under `runs/`. Both are local products, not source files.
 
+For the local copy used to validate this release, the THINGS cubes were kept on the Desktop and symlinked into `data/raw/`. That is fine: the FITS reader follows symlinks. The only requirement is that each config path resolves to the expected filename.
+
 ## Install
 
 The intended environment is Python 3.11. The project includes both Conda and pip-style dependency files.
@@ -187,10 +189,12 @@ The clean physical baseline is the workflow that produced the published checkpoi
 3. trains the high-recall U-Net,
 4. evaluates validation, test, and stress splits.
 
-Run it from the repository root:
+Run it from the repository root. On the validated local Apple Silicon setup, FITS/WCS preparation works in the base astronomy Python, while TensorFlow training must use the `tf` Conda environment:
 
 ```bash
-PREP_PYTHON=python TRAIN_PYTHON=python scripts/run_clean_physical_baseline.sh
+PREP_PYTHON=python \
+TRAIN_PYTHON=/opt/homebrew/anaconda3/envs/tf/bin/python \
+scripts/run_clean_physical_baseline.sh
 ```
 
 Useful environment overrides:
@@ -203,7 +207,7 @@ GRID_ANGLE_STEP_DEG=22.5
 EVERY=5
 ```
 
-If your TensorFlow environment is separate:
+If your TensorFlow environment lives somewhere else:
 
 ```bash
 PREP_PYTHON=/path/to/astro/python \

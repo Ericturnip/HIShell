@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local raw data and generated products. The paper-facing repository keeps
+# configs, source code, and the published checkpoint, not full THINGS cubes or
+# regenerated training/evaluation outputs.
+hishells-pv-research/data/
+hishells-pv-research/runs/
+hishells-pv-research/scratch/
+hishells-pv-research/training_data/*/
+!hishells-pv-research/training_data/configs/
+!hishells-pv-research/training_data/configs/**
