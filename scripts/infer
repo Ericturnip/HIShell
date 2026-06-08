@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PYTHON_BIN="${TF_PYTHON:-${PYTHON:-python}}"
+if [[ "${PYTHON_BIN}" == "python" && -x /opt/homebrew/anaconda3/envs/tf/bin/python ]]; then
+  PYTHON_BIN=/opt/homebrew/anaconda3/envs/tf/bin/python
+fi
+
+"${PYTHON_BIN}" -m hishells_pv.infer.infer_pv "$@"

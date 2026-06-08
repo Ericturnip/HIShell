@@ -5,9 +5,9 @@ __pycache__/
 # Local raw data and generated products. The paper-facing repository keeps
 # configs, source code, and the published checkpoint, not full THINGS cubes or
 # regenerated training/evaluation outputs.
-hishells-pv-research/data/
-hishells-pv-research/runs/
-hishells-pv-research/scratch/
-hishells-pv-research/training_data/*/
-!hishells-pv-research/training_data/configs/
-!hishells-pv-research/training_data/configs/**
+data/
+runs/
+scratch/
+training_data/*/
+!training_data/configs/
+!training_data/configs/**
