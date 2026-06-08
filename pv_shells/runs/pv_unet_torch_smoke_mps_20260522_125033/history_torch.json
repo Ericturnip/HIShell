@@ -1,0 +1,16 @@
+[
+  {
+    "epoch": 1,
+    "learning_rate": 0.001,
+    "loss": 0.7644625107447306,
+    "seconds": 4.760969291004585,
+    "steps": 30,
+    "samples_per_second": 50.40990296943482,
+    "val_loss": 0.7073759078979492,
+    "val_patch_precision_0p075": 0.9,
+    "val_patch_recall_0p075": 1.0,
+    "val_patch_f1_0p075": 0.9473684210526316,
+    "val_pixel_precision_0p075": 0.009779866536458333,
+    "val_pixel_recall_0p075": 1.0
+  }
+]

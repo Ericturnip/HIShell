@@ -1,0 +1,9 @@
+{
+  "fine_grid_false_positives_0p075": 410,
+  "background_false_positives_0p075": 474,
+  "missed_positive_patches_0p075": 24,
+  "missed_positive_patches_by_split": {
+    "test": 2,
+    "val": 22
+  }
+}

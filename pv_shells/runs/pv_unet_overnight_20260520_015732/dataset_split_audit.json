@@ -1,0 +1,387 @@
+{
+  "config": "/Users/turnip/Desktop/HIShells copy/pv_shells/training_data/combined_train_overnight.yaml",
+  "run_dir": "/Users/turnip/Desktop/HIShells copy/pv_shells/runs/pv_unet_overnight_20260520_015732",
+  "combined_root": "/Users/turnip/Desktop/HIShells copy/pv_shells/training_data/combined",
+  "split_summary": {
+    "data_root": "/Users/turnip/Desktop/HIShells copy/pv_shells/training_data",
+    "output_root": "/Users/turnip/Desktop/HIShells copy/pv_shells/training_data/combined",
+    "split_policy": "galaxy-held-out",
+    "val_galaxies": [
+      "ho_i",
+      "ngc_2366",
+      "ngc_4449",
+      "ngc_4736"
+    ],
+    "test_galaxies": [
+      "ddo53",
+      "ho_ii",
+      "ngc_3184",
+      "ngc_7793"
+    ],
+    "min_finite_fraction": 0.25,
+    "skipped": {
+      "low_finite_fraction": 1734,
+      "low_finite_fraction:ngc_3031": 1734
+    },
+    "splits": {
+      "train": {
+        "counts": {
+          "total": 18596,
+          "positive": 10712,
+          "negative": 7884
+        },
+        "galaxies": {
+          "ddo154": 274,
+          "ngc_2403": 4258,
+          "ngc_2841": 442,
+          "ngc_2976": 370,
+          "ngc_3031": 6028,
+          "ngc_3521": 70,
+          "ngc_3627": 490,
+          "ngc_4214": 1402,
+          "ngc_5194": 1210,
+          "ngc_628": 2602,
+          "ngc_6946": 1450
+        },
+        "sources": {
+          "unknown": 18596
+        },
+        "label_pixel_fraction": 0.005654579748904257
+      },
+      "val": {
+        "counts": {
+          "total": 2056,
+          "positive": 1003,
+          "negative": 1053
+        },
+        "galaxies": {
+          "ho_i": 202,
+          "ngc_2366": 682,
+          "ngc_4449": 538,
+          "ngc_4736": 634
+        },
+        "sources": {
+          "unknown": 2056
+        },
+        "label_pixel_fraction": 0.008007922145474944
+      },
+      "test": {
+        "counts": {
+          "total": 2872,
+          "positive": 1495,
+          "negative": 1377
+        },
+        "galaxies": {
+          "ddo53": 130,
+          "ho_ii": 1018,
+          "ngc_3184": 1018,
+          "ngc_7793": 706
+        },
+        "sources": {
+          "unknown": 2872
+        },
+        "label_pixel_fraction": 0.011535311175857406
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "n": 18596,
+      "galaxies": {
+        "ddo154": 274,
+        "ngc_2403": 4258,
+        "ngc_2841": 442,
+        "ngc_2976": 370,
+        "ngc_3031": 6028,
+        "ngc_3521": 70,
+        "ngc_3627": 490,
+        "ngc_4214": 1402,
+        "ngc_5194": 1210,
+        "ngc_628": 2602,
+        "ngc_6946": 1450
+      },
+      "pv_types": {
+        "catalog_shell": 9840,
+        "grid": 638,
+        "background_negative": 8118
+      },
+      "sources": {
+        "catalog_augmented": 9840,
+        "none": 638,
+        "random_background": 8118
+      },
+      "orientations": {
+        "galaxy_major": 2460,
+        "galaxy_minor": 2460,
+        "shell_major": 2460,
+        "shell_minor": 2460
+      },
+      "offset_fractions": {
+        "-0.5": 3280,
+        "0.0": 3280,
+        "0.5": 3280
+      },
+      "positive_slices_by_type": {
+        "catalog_shell": 9840,
+        "grid": 291,
+        "background_negative": 581
+      },
+      "negative_slices_by_type": {
+        "grid": 347,
+        "background_negative": 7537
+      },
+      "missing_meta": 0,
+      "centered_catalog_shell_cuts": 3280,
+      "catalog_shell_cuts": 9840,
+      "shape_counts_top20": {
+        "178x65": 3843,
+        "178x129": 2067,
+        "61x129": 1914,
+        "61x65": 1531,
+        "58x129": 1179,
+        "58x65": 1162,
+        "115x129": 599,
+        "102x129": 576,
+        "77x65": 547,
+        "115x65": 480,
+        "77x129": 461,
+        "102x65": 409,
+        "92x65": 216,
+        "132x65": 193,
+        "92x129": 191,
+        "132x129": 165,
+        "42x65": 156,
+        "42x129": 127,
+        "57x129": 96,
+        "57x65": 84
+      },
+      "example_velocity_ranges": [
+        [
+          447324.25,
+          302675.75,
+          -2583.03125
+        ],
+        [
+          447324.25,
+          302675.75,
+          -2583.03125
+        ],
+        [
+          447324.25,
+          302675.75,
+          -2583.03125
+        ],
+        [
+          447324.25,
+          302675.75,
+          -2583.03125
+        ],
+        [
+          447324.25,
+          302675.75,
+          -2583.03125
+        ]
+      ]
+    },
+    "val": {
+      "n": 2056,
+      "galaxies": {
+        "ho_i": 202,
+        "ngc_2366": 682,
+        "ngc_4449": 538,
+        "ngc_4736": 634
+      },
+      "pv_types": {
+        "catalog_shell": 912,
+        "grid": 232,
+        "background_negative": 912
+      },
+      "sources": {
+        "catalog_augmented": 912,
+        "none": 232,
+        "random_background": 912
+      },
+      "orientations": {
+        "galaxy_major": 228,
+        "galaxy_minor": 228,
+        "shell_major": 228,
+        "shell_minor": 228
+      },
+      "offset_fractions": {
+        "-0.5": 304,
+        "0.0": 304,
+        "0.5": 304
+      },
+      "positive_slices_by_type": {
+        "catalog_shell": 912,
+        "grid": 62,
+        "background_negative": 29
+      },
+      "negative_slices_by_type": {
+        "grid": 170,
+        "background_negative": 883
+      },
+      "missing_meta": 0,
+      "centered_catalog_shell_cuts": 304,
+      "catalog_shell_cuts": 912,
+      "shape_counts_top20": {
+        "68x65": 288,
+        "66x129": 269,
+        "68x129": 257,
+        "45x129": 213,
+        "66x65": 195,
+        "45x65": 111,
+        "36x129": 64,
+        "36x560": 58,
+        "66x560": 58,
+        "45x560": 58,
+        "68x560": 58,
+        "36x65": 42,
+        "66x81": 15,
+        "66x67": 13,
+        "45x69": 13,
+        "36x108": 12,
+        "66x73": 12,
+        "66x89": 12,
+        "45x97": 12,
+        "45x76": 12
+      },
+      "example_velocity_ranges": [
+        [
+          187420.1875,
+          97126.625,
+          -2579.8125
+        ],
+        [
+          187420.1875,
+          97126.625,
+          -2579.8125
+        ],
+        [
+          187420.1875,
+          97126.625,
+          -2579.8125
+        ],
+        [
+          187420.1875,
+          97126.625,
+          -2579.8125
+        ],
+        [
+          187420.1875,
+          97126.625,
+          -2579.8125
+        ]
+      ]
+    },
+    "test": {
+      "n": 2872,
+      "galaxies": {
+        "ddo53": 130,
+        "ho_ii": 1018,
+        "ngc_3184": 1018,
+        "ngc_7793": 706
+      },
+      "pv_types": {
+        "catalog_shell": 1320,
+        "grid": 232,
+        "background_negative": 1320
+      },
+      "sources": {
+        "catalog_augmented": 1320,
+        "none": 232,
+        "random_background": 1320
+      },
+      "orientations": {
+        "galaxy_major": 330,
+        "galaxy_minor": 330,
+        "shell_major": 330,
+        "shell_minor": 330
+      },
+      "offset_fractions": {
+        "-0.5": 440,
+        "0.0": 440,
+        "0.5": 440
+      },
+      "positive_slices_by_type": {
+        "catalog_shell": 1320,
+        "grid": 81,
+        "background_negative": 94
+      },
+      "negative_slices_by_type": {
+        "grid": 151,
+        "background_negative": 1226
+      },
+      "missing_meta": 0,
+      "centered_catalog_shell_cuts": 440,
+      "catalog_shell_cuts": 1320,
+      "shape_counts_top20": {
+        "72x65": 442,
+        "54x129": 408,
+        "72x129": 407,
+        "91x129": 288,
+        "91x65": 219,
+        "54x65": 215,
+        "41x560": 58,
+        "54x560": 58,
+        "72x560": 58,
+        "91x560": 58,
+        "41x65": 36,
+        "41x129": 35,
+        "72x68": 17,
+        "54x90": 13,
+        "91x69": 13,
+        "54x136": 12,
+        "54x208": 12,
+        "54x128": 12,
+        "54x66": 10,
+        "54x69": 10
+      },
+      "example_velocity_ranges": [
+        [
+          68960.984375,
+          -34114.7734375,
+          -2576.890625
+        ],
+        [
+          68960.984375,
+          -34114.7734375,
+          -2576.890625
+        ],
+        [
+          68960.984375,
+          -34114.7734375,
+          -2576.890625
+        ],
+        [
+          68960.984375,
+          -34114.7734375,
+          -2576.890625
+        ],
+        [
+          68960.984375,
+          -34114.7734375,
+          -2576.890625
+        ]
+      ]
+    }
+  },
+  "metadata_coverage": {
+    "has_galaxy": true,
+    "has_shell_id": true,
+    "has_radec": false,
+    "has_pixel_position": true,
+    "has_pv_cut_center": true,
+    "has_pv_cut_angle": "partial",
+    "has_spatial_offset": true,
+    "has_velocity_center": "catalog labels only; no local moment1 center",
+    "has_velocity_window": "native full spectral axis only",
+    "has_source_cube": "config level",
+    "has_moment_map_source": false
+  },
+  "risks": [
+    "Held-out test galaxies are disjoint from training galaxies, but the test manifest is dominated by catalog_shell cuts, including centered and near-centered Bagetakos cuts. Metrics can still be optimistic for blind deployment.",
+    "Current PV arrays use the native/full spectral axis and metadata does not record local Moment-1 velocity centering.",
+    "Current spatial windows are configured in arcsec/pixels/radius-scaled catalog cuts, not a fixed kpc input window."
+  ]
+}

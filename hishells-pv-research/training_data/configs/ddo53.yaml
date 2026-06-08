@@ -1,0 +1,79 @@
+cube_path: data/raw/DDO53_NA_CUBE_THINGS.FITS
+output_root: training_data/ddo53
+catalogs:
+  holes_dat: J_AJ_141_23_table7.dat.txt
+  kin_dat: null
+  target_galaxy: DDO 53
+  use_circular: true
+  hv_scale: auto
+  hv_offset_kms: 0.0
+galaxy:
+  name: DDO 53
+  ra_deg: 128.53
+  dec_deg: 66.18166666666667
+  pa_deg: 132.0
+  inc_deg: 31.0
+  vsys_kms: null
+  distance_mpc: 3.6
+  beam_fwhm_arcsec: null
+pv:
+  grid:
+    frame: galaxy
+    pa_convention: astro
+    pa_delta_deg: 0
+    x_extent_arcsec: 420.0
+    y_extent_arcsec: 420.0
+    x_step_arcsec: 30.0
+    y_step_arcsec: 30.0
+    slit_width_pix: 3
+    margin_arcsec: 0
+    pos_step_pix: 1.0
+  axes:
+    include_major_minor: true
+  shell_cuts:
+    enabled: true
+    keep_types:
+    - 1
+    - 2
+    - 3
+    orientations:
+    - shell_major
+    - shell_minor
+    - galaxy_major
+    - galaxy_minor
+    offset_fractions:
+    - -0.5
+    - 0.0
+    - 0.5
+    length_scale_radius: 4.0
+    min_half_length_pix: 32
+    max_half_length_pix: 160
+    slit_width_pix: 3
+    pos_step_pix: 1.0
+    qa_max_plots: 30
+  negatives:
+    enabled: true
+    n_per_shell: 12
+    max_total: null
+    galaxy_mask_percentile: 45.0
+    avoid_brightest_percentile: 99.5
+    min_sep_arcsec: 20.0
+    sep_radius_factor: 1.5
+    half_length_pix: 64
+    slit_width_pix: 3
+    pos_step_pix: 1.0
+    seed: 12345
+    max_attempts_factor: 100
+    qa_max_plots: 30
+  label:
+    keep_types:
+    - 1
+    - 2
+    - 3
+    catalog_pa_convention: astro
+    min_axis_ratio_circular: 0.8
+    type1_velocity_half_width_kms: 10.0
+    type1_velocity_half_width_channels: 2
+    vexp_fallback_channels: 3
+    dilate_vel_channels: 1
+    qa_max_plots: 80

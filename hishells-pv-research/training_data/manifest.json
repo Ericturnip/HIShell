@@ -1,0 +1,144 @@
+{
+  "galaxies": [
+    {
+      "name": "NGC 628",
+      "stem": "NGC_628",
+      "cube": "data/raw/NGC_628_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_628.yaml",
+      "output_root": "training_data/ngc_628"
+    },
+    {
+      "name": "NGC 2366",
+      "stem": "NGC_2366",
+      "cube": "data/raw/NGC_2366_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_2366.yaml",
+      "output_root": "training_data/ngc_2366"
+    },
+    {
+      "name": "NGC 2403",
+      "stem": "NGC_2403",
+      "cube": "data/raw/NGC_2403_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_2403.yaml",
+      "output_root": "training_data/ngc_2403"
+    },
+    {
+      "name": "Holmberg II",
+      "stem": "HO_II",
+      "cube": "data/raw/HO_II_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ho_ii.yaml",
+      "output_root": "training_data/ho_ii"
+    },
+    {
+      "name": "DDO 53",
+      "stem": "DDO53",
+      "cube": "data/raw/DDO53_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ddo53.yaml",
+      "output_root": "training_data/ddo53"
+    },
+    {
+      "name": "NGC 2841",
+      "stem": "NGC_2841",
+      "cube": "data/raw/NGC_2841_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_2841.yaml",
+      "output_root": "training_data/ngc_2841"
+    },
+    {
+      "name": "Holmberg I",
+      "stem": "HO_I",
+      "cube": "data/raw/HO_I_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ho_i.yaml",
+      "output_root": "training_data/ho_i"
+    },
+    {
+      "name": "NGC 2976",
+      "stem": "NGC_2976",
+      "cube": "data/raw/NGC_2976_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_2976.yaml",
+      "output_root": "training_data/ngc_2976"
+    },
+    {
+      "name": "NGC 3031",
+      "stem": "NGC_3031",
+      "cube": "data/raw/NGC_3031_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_3031.yaml",
+      "output_root": "training_data/ngc_3031"
+    },
+    {
+      "name": "NGC 3184",
+      "stem": "NGC_3184",
+      "cube": "data/raw/NGC_3184_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_3184.yaml",
+      "output_root": "training_data/ngc_3184"
+    },
+    {
+      "name": "NGC 3521",
+      "stem": "NGC_3521",
+      "cube": "data/raw/NGC_3521_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_3521.yaml",
+      "output_root": "training_data/ngc_3521"
+    },
+    {
+      "name": "NGC 3627",
+      "stem": "NGC_3627",
+      "cube": "data/raw/NGC_3627_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_3627.yaml",
+      "output_root": "training_data/ngc_3627"
+    },
+    {
+      "name": "NGC 4214",
+      "stem": "NGC_4214",
+      "cube": "data/raw/NGC_4214_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_4214.yaml",
+      "output_root": "training_data/ngc_4214"
+    },
+    {
+      "name": "NGC 4449",
+      "stem": "NGC_4449",
+      "cube": "data/raw/NGC_4449_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_4449.yaml",
+      "output_root": "training_data/ngc_4449"
+    },
+    {
+      "name": "NGC 4736",
+      "stem": "NGC_4736",
+      "cube": "data/raw/NGC_4736_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_4736.yaml",
+      "output_root": "training_data/ngc_4736"
+    },
+    {
+      "name": "DDO 154",
+      "stem": "DDO154",
+      "cube": "data/raw/DDO154_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ddo154.yaml",
+      "output_root": "training_data/ddo154"
+    },
+    {
+      "name": "NGC 5194",
+      "stem": "NGC_5194",
+      "cube": "data/raw/NGC_5194_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_5194.yaml",
+      "output_root": "training_data/ngc_5194"
+    },
+    {
+      "name": "NGC 6946",
+      "stem": "NGC_6946",
+      "cube": "data/raw/NGC_6946_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_6946.yaml",
+      "output_root": "training_data/ngc_6946"
+    },
+    {
+      "name": "NGC 7793",
+      "stem": "NGC_7793",
+      "cube": "data/raw/NGC_7793_NA_CUBE_THINGS.FITS",
+      "config": "training_data/configs/ngc_7793.yaml",
+      "output_root": "training_data/ngc_7793"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "IC 2574",
+      "stem": "IC_2574",
+      "reason": "missing_cube"
+    }
+  ]
+}

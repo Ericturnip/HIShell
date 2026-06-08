@@ -1,0 +1,6 @@
+{
+  "config": "/Users/turnip/Desktop/HIShells copy/pv_shells/training_data/standardized_5kpc_200kms_clean_physical_baseline/train_standardized_high_recall.yaml",
+  "device": "cpu",
+  "mps_available": true,
+  "torch_version": "2.11.0"
+}
