@@ -23,6 +23,7 @@ dependencies:
   # Image processing & classical ML
   - scikit-image
   - scikit-learn
+  - statsmodels
 
   # Deep learning (Apple Silicon: pytorch wheels include MPS support)
   - pytorch

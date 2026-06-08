@@ -3,7 +3,6 @@
 
 !.gitignore
 !README.md
-!AI_TRANSCRIPT_APPENDIX.md
 !hishells-pv-research/
 !hishells-pv-research/**
 
@@ -11,8 +10,6 @@
 .DS_Store
 **/.DS_Store
 WORKSPACE_MAP.md
-pv_shells/*
-presentation_visuals/*
 
 # Generated data and model artifacts.
 **/data/raw/
@@ -43,6 +40,11 @@ presentation_visuals/*
 *.pth
 events.out.tfevents*
 
+# One intentionally published paper/model artifact.
+!hishells-pv-research/artifacts/
+!hishells-pv-research/artifacts/**
+!hishells-pv-research/artifacts/models/hi_shell_pv_unet_clean_physical_baseline.keras
+
 # Local transcript/scratch files.
 hishells-pv-research/docs/transcripts/
 
@@ -61,10 +63,3 @@ dist/
 .ruff_cache/
 .coverage
 htmlcov/
-
-# Grading artifacts kept in Git.
-!pv_shells/
-!pv_shells/runs/
-!pv_shells/runs/**
-!presentation_visuals/
-!presentation_visuals/**

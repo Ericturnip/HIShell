@@ -13,6 +13,7 @@ reproject
 scikit-image
 scikit-learn
 jsonschema
+statsmodels
 
 tensorflow>=2.14
 torch

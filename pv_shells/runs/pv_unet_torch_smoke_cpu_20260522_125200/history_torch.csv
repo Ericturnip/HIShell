@@ -1,2 +1,0 @@
-epoch,learning_rate,loss,seconds,steps,samples_per_second,val_loss,val_patch_precision_0p075,val_patch_recall_0p075,val_patch_f1_0p075,val_pixel_precision_0p075,val_pixel_recall_0p075
-1,0.001,0.7673409422238667,9.115864749997854,30,26.327727163795018,0.7231994926929474,0.9,1.0,0.9473684210526316,0.009782155248725593,1.0

@@ -1,0 +1,62 @@
+{
+  "model": {
+    "name": "HI shell PV U-Net clean physical baseline",
+    "architecture": "2D U-Net / CNN mask segmenter",
+    "file": "artifacts/models/hi_shell_pv_unet_clean_physical_baseline.keras",
+    "sha256": "7e6b3a00378e5d76c72a1954b95cab508e5f799f5def0b589146a751ce9ff6e0",
+    "source_run": "pv_unet_clean_physical_baseline_20260522_022751",
+    "input_shape": [
+      96,
+      256,
+      1
+    ],
+    "spatial_window_kpc": 5.0,
+    "velocity_window_kms": 200.0,
+    "recommended_probability_threshold": 0.075
+  },
+  "metrics_at_threshold_0p075": {
+    "val": {
+      "patch_precision": 0.7779237844940867,
+      "patch_recall": 0.9977528089887641,
+      "patch_f1": 0.8742308638936747,
+      "pixel_precision": 0.1995253073932457,
+      "pixel_recall": 0.5767130599006446,
+      "pixel_f1": 0.2964781319829026,
+      "pixel_pr_auc": 0.252164751291275
+    },
+    "test": {
+      "patch_precision": 0.8154685494223364,
+      "patch_recall": 0.9996066089693155,
+      "patch_f1": 0.8981972428419936,
+      "pixel_precision": 0.2683424403217949,
+      "pixel_recall": 0.6903441501253302,
+      "pixel_f1": 0.3864633880403144,
+      "pixel_pr_auc": 0.3523470163345337
+    },
+    "stress": {
+      "patch_precision": 0.7489603024574669,
+      "patch_recall": 0.9766639276910436,
+      "patch_f1": 0.8477888730385164,
+      "pixel_precision": 0.03178049904678002,
+      "pixel_recall": 0.28168515653290316,
+      "pixel_f1": 0.05711691018992912,
+      "pixel_pr_auc": 0.018260367214679718
+    }
+  },
+  "metric_source_note": "Metrics were condensed from the archived source run; raw evaluation JSON files and historical run artifacts are intentionally omitted from the paper-facing repository.",
+  "ddo53_physical_grid_shell_recall": {
+    "threshold": 0.075,
+    "shell_level_grid_coverage": 1.0,
+    "shell_level_detection_recall": 1.0,
+    "covered_shells": [
+      1,
+      2,
+      3
+    ],
+    "detected_shells": [
+      1,
+      2,
+      3
+    ]
+  }
+}

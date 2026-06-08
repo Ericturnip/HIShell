@@ -1,22 +1,22 @@
 # HI Shell Detection With Standardized PV Slices
 
-This repository contains the working code for my HI shell detection project. It uses position-velocity cuts from THINGS galaxies and trains a high-recall U-Net to find shell-like structure.
+This repository contains the finished code for the HI shell detection project. It uses position-velocity cuts from THINGS galaxies and trains a high-recall U-Net to find shell-like structure.
 
 Each PV slice is resampled into the same physical frame: 5 kpc across the spatial axis and 200 km/s across the velocity axis. The code keeps catalog-centered cuts, offset cuts, velocity-offset cuts, fine-grid cuts, and background cuts separate so the validation numbers say what kind of case the model handled.
 
 ## Repository Contents
 
 - `src/`: PV extraction, shell labeling, dataset loading, training, evaluation, and post-processing.
-- `scripts/`: Command-line entrypoints for generating cuts, training models, evaluating runs, and cleaning candidates.
+- `scripts/`: Command-line entrypoints for generating cuts, training, evaluating, inferring, and cleaning candidates.
 - `training_data/configs/`: Per-galaxy config files. They point to `data/raw/*.FITS`, which Git ignores.
-- `docs/figures/`: Paper-style figures and captions for the project presentation.
-- `docs/model_label_examples/`: Example PV panels showing labels and model probabilities.
-- `docs/results/clean_physical_baseline/`: Small JSON/CSV summaries from the clean physical baseline run. Model weights are left out.
+- `artifacts/models/`: The published CNN checkpoint used for the paper-facing results.
+- `artifacts/model_metadata.json`: Checkpoint checksum and headline metrics for the published model.
+- `notebooks/shell_type_selection_effects.ipynb`: Clean shell-type analysis notebook.
 - `J_AJ_141_23_table2.dat.txt` and `J_AJ_141_23_table7.dat.txt`: Bagetakos et al. catalog tables used to build shell labels.
 
 ## Data
 
-Raw THINGS FITS cubes are too large for this repo. Generated PV arrays, labels, model checkpoints, and TensorBoard logs are local outputs too. Put local cubes under:
+Raw THINGS FITS cubes are too large for this repo. Generated PV arrays, labels, extra model checkpoints, and TensorBoard logs are local outputs too. Put local cubes under:
 
 ```bash
 data/raw/
@@ -35,7 +35,17 @@ Install the Git hook before committing:
 bash scripts/install_hooks.sh
 ```
 
-The hook blocks FITS files, generated numpy arrays, and model checkpoints.
+The hook blocks FITS files, generated numpy arrays, and model checkpoints, except for the intentionally published checkpoint in `artifacts/models/`.
+
+## Published Model
+
+The paper-facing checkpoint is:
+
+```text
+artifacts/models/hi_shell_pv_unet_clean_physical_baseline.keras
+```
+
+Use `artifacts/model_metadata.json` for the SHA-256 checksum, source run, input shape, recommended threshold, and headline validation/test/stress metrics. Raw historical eval JSONs are intentionally omitted. See `docs/MODEL_ARTIFACT.md` for a short model card.
 
 ## Environment
 
@@ -84,8 +94,8 @@ The fine-grid score is the deployment benchmark. It is closest to how the model 
 
 For report writing and grading:
 
-- `docs/METHODS_CODE_MAP.md` maps each method step to the named functions and modules that implement it.
-- `docs/FIGURE_REPRODUCIBILITY.md` lists the script and function used to produce each report figure.
+- `docs/MODEL_ARTIFACT.md` records the published model checkpoint.
+- `docs/SHELL_TYPE_ANALYSIS.md` records the preserved shell-type analysis notebook.
 
 ## Tests
 
@@ -93,4 +103,4 @@ For report writing and grading:
 pytest
 ```
 
-The tests focus on configuration loading, dataset behavior, loss numerics, and the synthetic PV pipeline.
+The tests are lightweight paper-facing checks: catalog loading, model artifact metadata, and an optional TensorFlow loss import smoke test. They do not require raw FITS cubes or generated training arrays.

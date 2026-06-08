@@ -46,6 +46,11 @@ checkpoints/
 *.pth
 events.out.tfevents*
 
+# Published checkpoint used by the paper/repository release.
+!artifacts/
+!artifacts/**
+!artifacts/models/hi_shell_pv_unet_clean_physical_baseline.keras
+
 # Local review/scratch outputs
 review_panels/
 candidate_components/

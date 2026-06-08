@@ -23,6 +23,7 @@ dependencies = [
     "scikit-learn",
     "scipy",
     "spectral-cube",
+    "statsmodels",
     "tensorflow>=2.14",
     "torch",
     "torchvision",
