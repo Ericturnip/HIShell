@@ -96,11 +96,3 @@ For report writing and grading:
 
 - `docs/MODEL_ARTIFACT.md` records the published model checkpoint.
 - `docs/SHELL_TYPE_ANALYSIS.md` records the preserved shell-type analysis notebook.
-
-## Tests
-
-```bash
-pytest
-```
-
-The tests are lightweight paper-facing checks: catalog loading, model artifact metadata, and an optional TensorFlow loss import smoke test. They do not require raw FITS cubes or generated training arrays.
