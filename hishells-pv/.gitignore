@@ -1,0 +1,100 @@
+# macOS / editor noise
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python caches / bytecode
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.conda/
+
+# Build / packaging artifacts
+build/
+dist/
+pip-wheel-metadata/
+
+# Archives (binary, often large / regenerable)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+report_paper/
+
+# Test / type-check / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.mplcache/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Raw astronomy cubes — far too large for Git/GitHub (Data/THINGS is ~9 GB).
+*.fits
+*.FITS
+*.fit
+*.FIT
+*.fts
+*.FTS
+*.fits.gz
+*.FITS.gz
+Data/THINGS/
+
+# Papers (binary, often copyrighted)
+papers/
+Papers/
+*.pdf
+
+# Generated PV data, labels, model outputs, and training artifacts.
+training_data/**
+runs/**
+data/**
+data_*/**
+preview_*/**
+archive/**
+outputs/**
+results/**
+checkpoints/**
+models/**
+
+# Keep lightweight directory notes.
+!training_data/
+!training_data/README.md
+!runs/
+!runs/README.md
+!data/
+!data/README.md
+
+# Large / generated array and model formats.
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.keras
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.pickle
+
+# Logs and local run bookkeeping
+*.log
+current_training_run.txt
+
+# Local-only planning notes (not for the public repo)
+plan.md
+implementation_plan.md

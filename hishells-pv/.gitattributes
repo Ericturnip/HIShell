@@ -1,0 +1,14 @@
+# Make accidental large binary additions visually obvious in diffs.
+*.fits binary
+*.FITS binary
+*.fit binary
+*.FIT binary
+*.fts binary
+*.FTS binary
+*.npy binary
+*.npz binary
+*.keras binary
+*.h5 binary
+*.hdf5 binary
+*.pt binary
+*.pth binary
