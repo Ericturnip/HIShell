@@ -1,15 +1,11 @@
 # HI Shell Detection With Standardized PV Slices
 
-This checkout is prepared for GitHub around the public project directory:
+Start here:
 
 ```text
 hishells-pv-research/
 ```
 
-That directory contains the source code, small catalog tables, configs, the
-paper-facing model checkpoint, compact evaluation summaries, and the shell-type
-analysis notebook for the HI shell PV-slice detection project. Local experiment
-outputs, raw FITS cubes, generated arrays, extra checkpoints, and scratch files
-are ignored at the parent level.
+That folder contains the paper-facing code, the published CNN checkpoint, the compact model metadata, catalog tables, configs, and the shell-type analysis notebook.
 
-Start in `hishells-pv-research/` for installation and run instructions.
+The repository no longer keeps historical runs, generated visualizations, raw FITS cubes, generated arrays, or rough draft material. See [hishells-pv-research/README.md](hishells-pv-research/README.md) for the full workflow.
